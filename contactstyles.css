@@ -1,0 +1,249 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.icon-space {
+  margin-right: 7px; /* You can adjust the value as needed */
+}
+
+body {
+  min-height: 100vh;
+  background-color: #5E1984; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#5E1984, #DE6283, #472B6C);
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: #5E1984;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 32px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+
+}
+
+.navbar a {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 35px;
+}
+
+.navbar a:hover{
+  color: #DE6283;
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+
+.main {
+
+    height: 1500px;
+    text-align: center;
+}
+
+.main h1 {
+  background-color: #ffffff;
+  height: 70px;
+  width: 700px;
+  text-align: center;
+  color: #7b1b6d;
+  line-height: 70px; /* Adjust the line-height to vertically center the text */
+  margin: 0 auto; /* Center the element horizontally */
+}
+
+.header h1 {
+background-color: #ffffff;
+height: 70px;
+width: 700px;
+text-align: center;
+color: #7b1b6d;
+border-radius: 100px;
+line-height: 70px; /* Adjust the line-height to vertically center the text */
+margin: 0 auto; /* Center the element horizontally */
+}
+
+/*
+  FOOTER 
+*/
+
+:root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  overflow-x: hidden; /* Optional: Hide horizontal overflow */
+}
+
+.footer {
+  position: fixed; /* Changed from 'absolute' to 'fixed' */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background: #5E1984;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+/*
+  TABLE
+*/
+
+.table a {
+  font-size: 20px;
+  color: #000000;
+  font-weight: 500;
+  text-decoration: none;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.table tr {
+  height: 150px;
+  
+}
+
+.table td {
+  width:380px;
+  margin-left: 10px;
+}
+
+.table p {
+  font-size: 30px;
+  color: #4c1669;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 35px;
+}
+
+i {
+  size: 50px;
+}
+
+.table {
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 0 0 10px #ffffff;
+}
+
+/*
+  IMAGE SLIDER
+*/
+
+.slider_container {
+  position: relative;
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+.slider {
+  position: relative;
+  width: 400%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  animation: 30s cubic-bezier(1, 0.95, 0.565, 1) sliding infinite;
+}
+.slide {
+  position: relative;
+  min-width: 100%;
+  height: 100%;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+.slide .caption {
+  position: absolute;
+  left: 0;
+  bottom: 5%;
+  font-size: 5rem;
+  font-weight: 600;
+  color: white;
+  text-transform: capitalize;
+  background: rgba(0, 0, 0, 0.348);
+  backdrop-filter: blur(10px);
+  padding: 1rem 5rem;
+  border-radius: 0 2rem 2rem 0;
+}
+.slide.one {
+  background: rgb(182, 19, 109);
+}
+.slide.two {
+  background: rgb(255, 64, 64);
+}
+.slide.three {
+  background: rgb(11, 173, 188);
+}
+.slide.four {
+  background: rgb(11, 188, 14);
+}
+.slide.five {
+  background: rgb(173, 11, 188);
+}
+@keyframes sliding {
+  0% {
+    transform: translateX(0%);
+  }
+  20% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  45% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  70% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+  95% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(-400%);
+  }
+}

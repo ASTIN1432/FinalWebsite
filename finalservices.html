@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-class Challenge</title>
+    <link rel="icon" type="image/x-icon" href="services.ico">
+    <link rel="stylesheet" href="servicesstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Logo</a>
+
+        <nav class="navbar">
+            <a href="index.html"><i class="fas fa-home icon-space"></i> Home</a>
+            <a href="finalabout.html"><i class="fas fa-info-circle icon-space"></i> About</a>
+            <a href="finalservices.html" class="active"><i class="fas fa-tools icon-space"></i> Services</a>
+            <a href="finalcontact.html"><i class="fas fa-envelope icon-space"></i> Contact</a>
+            <a href="indexx.html"><i class="fas fa-user icon-space"></i> Admin</a>
+        </nav>
+    </header>
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <main class="main">
+        <br>
+        <br>
+        <br>
+        <h1><center>ASTIN'S MOBILE REPAIR SERVICES</center></h1>
+        <br>
+        <br>
+        <div class="container">
+            <div class="image">
+                <img src="phone.jpg" style="width: 1035px;" alt="Mobile Repair Services">
+            </div>
+            <div class="text">
+                <h2 style="margin-top: 1em;">ASTIN'S MOBILE REPAIR SERVICES</h2><br>
+                <p style="margin-left: 15em; margin-right: 15em; background-color: #ffffffaa;"><br><b>Welcome to Astin's Mobile Repair Services, where expertise meets convenience! As a 20-year-old with a passion for technology and 5 years of hands-on experience in mobile repair, I bring a youthful energy and a wealth of knowledge to every service call. Currently pursuing my first year in IT studies, I blend academic learning with practical skills to offer reliable solutions for your mobile devices.
+                    Whether it's a cracked screen, a malfunctioning battery, or software issues, I specialize in diagnosing and repairing a wide range of mobile phone problems. My commitment to quality craftsmanship means your device is in capable hands. I prioritize customer satisfaction, ensuring each repair is done efficiently and with attention to detail.
+                    Choose Astin's Mobile Repair Services for prompt, professional repairs that fit into your busy schedule. Contact me today to restore your mobile device to optimal functionality!<br></b><br> <img src="pandapic.png"><br> <br> </p>
+            </div>
+        </div>
+    </main>
+
+    <div class="footer">&copy;<span id="year"> </span><span> Astin's Mobile Repair. All rights reserved.</span></div>
+
+    <script>
+
+    let year = document.querySelector("#year");
+
+    $(document).ready(function () {
+    year.innerText = new Date().getFullYear();
+    });
+
+    </script>
+
+</body>
+</html>

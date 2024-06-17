@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-class Challenge</title>
+    <link rel="stylesheet" href="blogtstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Logo</a>
+
+        <nav class="navbar">
+            <a href="index.html"><i class="fas fa-home icon-space"></i> Home</a>
+            <a href="finalabout.html"><i class="fas fa-info-circle icon-space"></i> About</a>
+            <a href="finalservices.html" class="active"><i class="fas fa-tools icon-space"></i> Services</a>
+            <a href="finalcontact.html"><i class="fas fa-envelope icon-space"></i> Contact</a>
+            <a href="indexx.html"><i class="fas fa-user icon-space"></i> Admin</a>
+        </nav>
+    </header>
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <main class = "main">
+        <br>
+        <br>
+        <br>
+        <h1><center>ASTIN'S MOBILE REPAIR SERVICES</center></h1>
+
+        </div>
+    </main>
+
+    <div class="footer">&copy;<span id="year"> </span><span> Astin's Mobile Repair. All rights reserved.</span></div>
+
+    <script>
+
+    let year = document.querySelector("#year");
+
+    $(document).ready(function () {
+    year.innerText = new Date().getFullYear();
+    });
+
+    </script>
+
+</body>
+</html>

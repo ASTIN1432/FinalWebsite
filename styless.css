@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+html,body{
+	display: grid;
+	height: 100%;
+	width: 100vw;
+	place-items: center;
+	animation: change 10s infinite;
+}
+
+
+@keyframes change{
+	0%{background-color: #5E1984;}
+	25%{background-color: #472B6C;}	
+	50%{background-color: #5E1984;}	
+	75%{background-color: #472B6C;}
+	100%{background-color: #5E1984;}
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 100px;
+    background: #5E1984;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 35px;
+}
+
+.navbar a:hover{
+    color: #DE6283;
+  }
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+
+.wr{
+	width: 400px;
+	background: #fff;
+	border-radius: 15px;
+	border-width: 3px;
+	box-shadow:50px 50px 50pc #DE6283;
+}
+
+.wr .title{
+	font-size: 35px;
+	font-weight: 600;
+	text-align: center;
+	line-height: 100px;
+	border-radius: 15px 15px 0px 0px;
+	background: linear-gradient(90deg, #5E1984, #5E1984);
+}
+
+.wr form{
+	padding: 10px 30px 80px 30px;
+}
+
+.wr form .field{
+	position: relative;
+	height: 50px;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.wr form .field input{
+	height: 100%;
+	width: 100%;
+	padding-left: 20px;
+	border-radius: 25px;
+	outline: none;
+	font-size: 16px;
+	border: 3px solid lightrey;
+	transition: all 0.3s ease;
+}
+
+.wr form .field input:focus,
+.wr form .field input:valid{
+	border-color: 4158d0;
+}
+
+.wr form .field label{
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	font-size: 17px;
+	color: #999;
+	transform: translateY(-50%);
+	pointer-events: none;
+	transition: all 0.3s ease;
+}
+.wr form .field input:focus ~ label,
+.wr form .field input:valid ~ label{
+	top: 0%;
+	color: #DE6283;
+	font-size: 16px;
+	background: #fff;
+	transform: translateY(-50%);
+}
+
+.wr form .field input[type="submit"]{
+	color: #fff;
+	background: linear-gradient(90deg, #DE6283, #5E1984);
+	font-size: 18px;
+	font-weight: 500;
+	border: none;
+	padding-left: 0px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.wr form .field input [type = "submit"]:active{
+	transform: scale(0.95);
+}
+
+
+
+.wr form .check-wrap a{
+	color: #DE6283;
+	float: right;
+	text-decoration: none;
+}
+
+.wr form .pass-link,
+.wr form .signup-link{
+	color: #DE6283;
+	margin: 8px 0 0 10px;
+	
+}
+
+.wr form .signup-link{
+	color: #DE6283;
+	text-align: center;
+	margin-top: 20px;
+	color: #262626;
+}
+
+.wr form .pass-link a,
+.wr form .signup-link a{
+	color: #DE6283;
+	text-decoration: none;
+}
+
+.wr form .pass-link a:hover,
+.wr form .signup-link a:hover{
+	text-decoration: underline;
+}

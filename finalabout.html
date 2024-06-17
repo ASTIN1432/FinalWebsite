@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="about.ico">
+    <title>CSS Pseudo-class Challenge</title>
+    <link rel="stylesheet" href="aboutstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header class = "header">
+        <a href = "#" class ="logo">Logo</a>
+
+
+        <nav class="navbar">
+            <a href="index.html"><i class="fas fa-home icon-space"></i> Home</a>
+            <a href="finalabout.html"><i class="fas fa-info-circle icon-space"></i> About</a>
+            <a href="finalservices.html" class="active"><i class="fas fa-tools icon-space"></i> Services</a>
+            <a href="finalcontact.html"><i class="fas fa-envelope icon-space"></i> Contact</a>
+            <a href="indexx.html"><i class="fas fa-user icon-space"></i> Admin</a>
+        </nav>
+    </header>
+
+    <section class="main">
+        <div class="main-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Jastin Panis</h1>
+            <h3>And I'm a <span>Cellphone Technician</span></h3>
+            <p>Ako po si natoy sir sample ko lang po ito wala papo ako maisip HAAHAHAHAHA Magandang umaga po sa inyong lahat!! Pogi kopo.</p>
+            <div class="social-media">
+                <a href="https://web.facebook.com/jastin.panis.1/" style="--i:6;"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/atnmglnpns?igsh=YTVoc2xkZWJsdHBj" style="--i:7;"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://x.com/atnmglnpns?t=KKbBdE1o65b6LVQS5HEKxA&s=09" style="--i:8;"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://github.com/ASTIN1432" style="--i:9;"><i class='bx bxl-github' ></i></a>
+            </div>
+            <a href="https://m.me/jastin.panis1" class="btn">SEND MESSAGE</a>    
+        </div>
+        <div class="main-img">
+            <img src="picnobg.png" alt="">
+        </div>
+    </section>
+
+    <div class="footer">&copy;<span id="year"> </span><span> Astin's Mobile Repair. All rights reserved.</span></div>
+
+
+
+
+    <script>
+
+    let year = document.querySelector("#year");
+
+    (document).ready(function () {
+    year.innerText = new Date().getFullYear();
+    });
+
+    </script>
+
+</body>
+</html>

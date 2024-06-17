@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="homee.ico">
+    <title>CSS Pseudo-class Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Logo</a>
+
+        <nav class="navbar">
+            <a href="index.html"><i class="fas fa-home icon-space"></i> Home</a>
+            <a href="finalabout.html"><i class="fas fa-info-circle icon-space"></i> About</a>
+            <a href="finalservices.html" class="active"><i class="fas fa-tools icon-space"></i> Services</a>
+            <a href="finalcontact.html"><i class="fas fa-envelope icon-space"></i> Contact</a>
+            <a href="indexx.html"><i class="fas fa-user icon-space"></i> Admin</a>
+        </nav>
+    </header>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <main class = "main">
+    <br>
+    <br>
+    <br>
+        <h1>ASTIN'S MOBILE REPAIR</h1>
+
+        <input id="userInput" type="text" required placeholder="Enter your name">
+        <button type="button" id="submit" onclick="openPopup()">Click Me!</button>
+        <div class = "popup" id="popup">
+            <img src ="pandapic.png">
+    
+            <br>
+            <h2 id="message">Hello, Good Day!</h2>
+            <p>Thank you for visiting our homepage, kindly check the button in the upper right corner to check our official website.</p>
+            <br>
+            <button type="button"  onclick="closePopup()">OK</button>
+        </div>
+        
+
+        <div class="footer">&copy;<span id="year"> </span><span> Astin's Mobile Repair. All rights reserved.</span></div>
+
+    </main>
+
+    
+
+        <script>
+
+function openPopup() {
+    var userInput = document.getElementById("userInput").value;
+    var message = document.getElementById("message");
+    message.textContent = "Hello,"+ userInput +""+" Good Day!";
+    popup.classList.add("open-popup");
+}
+
+
+function closePopup() {
+    popup.classList.remove("open-popup");
+}
+
+let year = document.querySelector("#year");
+
+$(document).ready(function () {
+  year.innerText = new Date().getFullYear();
+});
+        </script>
+</body>
+</html>
